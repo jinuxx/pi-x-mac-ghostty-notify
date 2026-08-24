@@ -34,7 +34,7 @@ pi -e ./extensions/index.ts
 从 Git 仓库安装：
 
 ```bash
-pi install git:github.com/<用户名>/pi-x-mac-ghostty-notify
+pi install git:github.com/jinuxx/pi-x-mac-ghostty-notify
 ```
 
 安装后重启 Pi，或执行 `/reload`。
