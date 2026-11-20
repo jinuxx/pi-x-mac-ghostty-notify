@@ -5,7 +5,10 @@
 ## 功能
 
 - Pi 对话结束、等待下一次输入时发送提醒
+- 后台 subagent 仍在运行时不发结束提醒，等子任务完成、真正结束后再提醒
+- 提醒内容带本地时间前缀，如 `[15:42]`
 - `ask_user_question` 需要用户回答或选择时发送提醒
+- 任何阻塞式 UI 询问（确认/选择/输入/编辑/自定义弹框）都会提醒，与 `ask_user_question` 不会重复
 - `/notify [内容]` 手动发送测试提醒
 - 使用 Ghostty 原生 OSC 9，不依赖 `terminal-notifier` 或 `osascript`
 
